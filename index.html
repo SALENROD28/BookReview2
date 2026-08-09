@@ -10,11 +10,12 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>Webtext</title>
+  <title>Introduction | Webtext</title>
 
   <link rel="stylesheet" href="style.css">
 
 </head>
+
 
 <body>
 
@@ -29,7 +30,14 @@
 
     <nav class="main-navigation" aria-label="Main navigation">
 
-      <a href="index.html">Introduction</a>
+      <a
+        href="index.html"
+        class="active"
+        aria-current="page"
+      >
+        Introduction
+      </a>
+
 
       <div class="dropdown">
 
@@ -55,10 +63,15 @@
 
       </div>
 
+
       <a href="audience.html">Audience</a>
+
       <a href="interview.html">Interview</a>
+
       <a href="authors.html">Authors</a>
+
       <a href="conclusion.html">Conclusion</a>
+
       <a href="references.html">References</a>
 
     </nav>
@@ -66,196 +79,172 @@
   </header>
 
 
-  <!-- Main content -->
+  <!-- Main Content -->
   <main id="main-content">
 
-    <section class="featured-section">
 
-      <div class="section-heading">
+    <!-- Introduction Hero -->
+    <section class="intro-hero">
 
-        <p class="section-label">
-          Meet the Contributors
-        </p>
-
-        <h1>
-          Authors and Interview Participants
-        </h1>
-
-        <p class="section-introduction">
-          This section introduces the writers, scholars, and participants
-          whose work and perspectives shape this webtext.
-        </p>
-
-      </div>
+      <div class="intro-hero-inner">
 
 
-      <!-- Four-card layout -->
-      <div class="card-grid">
+        <!-- Introductory Text -->
+        <div class="intro-text">
 
+          <p class="section-label">
+            Book Review Webtext
+          </p>
 
-        <!-- Card 1: David -->
-        <article class="profile-card">
+          <h1>
+            Your Webtext Title
+          </h1>
 
-          <div class="card-image-container">
+          <p class="intro-subtitle">
+            Add a short subtitle or description of the book,
+            its central argument, and the focus of this webtext.
+          </p>
 
-            <img
-              src="david.jpg"
-              alt="Portrait of David Ornelas"
-              class="card-image"
-            >
+          <div class="intro-byline">
+
+            <p>
+              By <strong>David Ornelas</strong>
+            </p>
 
           </div>
 
-          <div class="card-content">
+        </div>
 
-            <p class="card-category">
-              Author
+
+        <!-- Book Cover -->
+        <div class="intro-cover">
+
+          <div class="cover-placeholder">
+
+            <p>
+              Book Cover
             </p>
-
-            <h2>
-              <a href="david.html">
-                David Ornelas
-              </a>
-            </h2>
-
-            <p class="card-description">
-              Add a brief biography here describing your role in the
-              webtext, your academic background, and your research interests.
-            </p>
-
-            <a class="card-link" href="david.html">
-              Read biography
-              <span aria-hidden="true">→</span>
-            </a>
 
           </div>
 
-        </article>
-
-
-        <!-- Card 2: Professor 1 -->
-        <article class="profile-card">
-
-          <div class="card-image-container">
-
-            <img
-              src="professor1.jpg"
-              alt="Portrait of featured professor"
-              class="card-image"
-            >
-
-          </div>
-
-          <div class="card-content">
-
-            <p class="card-category">
-              Featured Scholar
-            </p>
-
-            <h2>
-              <a href="professor1.html">
-                Professor Name
-              </a>
-            </h2>
-
-            <p class="card-description">
-              Add a brief description of this professor, their scholarship,
-              and their relationship to the webtext.
-            </p>
-
-            <a class="card-link" href="professor1.html">
-              Read biography
-              <span aria-hidden="true">→</span>
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- Card 3: Professor 2 -->
-        <article class="profile-card">
-
-          <div class="card-image-container">
-
-            <img
-              src="professor2.jpg"
-              alt="Portrait of featured professor"
-              class="card-image"
-            >
-
-          </div>
-
-          <div class="card-content">
-
-            <p class="card-category">
-              Featured Scholar
-            </p>
-
-            <h2>
-              <a href="professor2.html">
-                Professor Name
-              </a>
-            </h2>
-
-            <p class="card-description">
-              Add a brief description of this professor, their research,
-              publications, and their contribution to the project.
-            </p>
-
-            <a class="card-link" href="professor2.html">
-              Read biography
-              <span aria-hidden="true">→</span>
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- Card 4: Professor 3 -->
-        <article class="profile-card">
-
-          <div class="card-image-container">
-
-            <img
-              src="professor3.jpg"
-              alt="Portrait of featured professor"
-              class="card-image"
-            >
-
-          </div>
-
-          <div class="card-content">
-
-            <p class="card-category">
-              Featured Scholar
-            </p>
-
-            <h2>
-              <a href="professor3.html">
-                Professor Name
-              </a>
-            </h2>
-
-            <p class="card-description">
-              Add a brief description of this professor, their scholarship,
-              and the relevance of their work to this webtext.
-            </p>
-
-            <a class="card-link" href="professor3.html">
-              Read biography
-              <span aria-hidden="true">→</span>
-            </a>
-
-          </div>
-
-        </article>
+        </div>
 
 
       </div>
 
     </section>
+
+
+    <!-- Introduction Content -->
+    <section class="introduction-content">
+
+      <div class="content-wrapper">
+
+
+        <div class="content-main">
+
+          <p class="section-label">
+            Introduction
+          </p>
+
+          <h2>
+            About This Webtext
+          </h2>
+
+          <p>
+            Begin your introduction here. This section can introduce
+            the book, its authors, its central argument, and the larger
+            scholarly conversations that frame your review.
+          </p>
+
+          <p>
+            You can also explain why this book matters to readers in
+            rhetoric, writing studies, technical communication, digital
+            rhetoric, or whichever scholarly communities are most
+            relevant to the project.
+          </p>
+
+          <p>
+            Because this is a webtext rather than a traditional print
+            book review, this introduction can also orient readers to
+            the structure of the site and explain how the different
+            sections work together.
+          </p>
+
+
+          <h2>
+            Navigating the Webtext
+          </h2>
+
+          <p>
+            The Chapters section provides individual discussions of
+            each chapter of the book. Additional sections examine the
+            book's audience, include interview material, introduce the
+            authors and contributors, and offer a concluding assessment
+            of the book's contributions.
+          </p>
+
+        </div>
+
+
+        <!-- Sidebar -->
+        <aside class="intro-sidebar">
+
+          <div class="sidebar-box">
+
+            <p class="sidebar-label">
+              In This Webtext
+            </p>
+
+            <ul>
+
+              <li>
+                <a href="chapter-1.html">
+                  Chapter Discussions
+                </a>
+              </li>
+
+              <li>
+                <a href="audience.html">
+                  Audience
+                </a>
+              </li>
+
+              <li>
+                <a href="interview.html">
+                  Interview
+                </a>
+              </li>
+
+              <li>
+                <a href="authors.html">
+                  Authors
+                </a>
+              </li>
+
+              <li>
+                <a href="conclusion.html">
+                  Conclusion
+                </a>
+              </li>
+
+              <li>
+                <a href="references.html">
+                  References
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </aside>
+
+
+      </div>
+
+    </section>
+
 
   </main>
 
@@ -271,5 +260,5 @@
 
 
 </body>
-  
+
 </html>
