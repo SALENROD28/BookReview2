@@ -517,3 +517,8 @@ img {
 .profile-card:nth-child(4) .card-image {
   object-position: center 10%;
 }
+
+.main-navigation a.active {
+  color: #168a96;
+  border-bottom: 4px solid #2bb8c3;
+}
