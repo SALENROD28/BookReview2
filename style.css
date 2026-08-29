@@ -880,3 +880,79 @@ img {
 
   align-items: start;
 }
+/* ---------------------------------
+   INTERVIEW QUESTION SIDEBAR
+---------------------------------- */
+
+.interview-sidebar {
+  width: 100%;
+  padding: 25px;
+
+  background-color: #eefafb;
+
+  border: 1px solid #c9e8ea;
+  border-radius: 7px;
+}
+
+.interview-sidebar h2 {
+  margin: 0 0 20px;
+  padding-bottom: 15px;
+
+  color: #168a96;
+
+  border-bottom: 3px solid #2bb8c3;
+
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Individual question */
+
+.question-item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 10px;
+
+  width: 100%;
+  padding: 16px 10px;
+
+  background: transparent;
+
+  border: none;
+  border-bottom: 1px solid #c9e8ea;
+
+  text-align: left;
+  cursor: pointer;
+}
+
+.question-number {
+  color: #168a96;
+
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.question-text {
+  color: #222222;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+
+/* Selected question */
+
+.question-item.active {
+  background-color: #d9f4f5;
+  border-left: 5px solid #2bb8c3;
+}
+
+
+/* Hover effect */
+
+.question-item:hover {
+  background-color: #e4f7f8;
+}
