@@ -1,132 +1,249 @@
 <main class="interview-page">
 
+  <!-- =========================
+       INTERVIEW INTRODUCTION
+  ========================== -->
+
   <section class="interview-intro">
+
+    <p class="section-label">INTERVIEW WITH THE AUTHORS</p>
+
     <h1>Interview with the Authors</h1>
 
     <p>
-      Listen to the full conversation I had with the authors about their book,
-      collaborative writing, pedagogy, and what they hope instructors take away
-      from their work.
+      Listen to the conversation I had with the authors about their book,
+      collaborative writing, pedagogy, and what they hope instructors take
+      away from their work.
     </p>
+
   </section>
 
 
+  <!-- =========================
+       INTERVIEW LAYOUT
+  ========================== -->
+
   <section class="interview-layout">
 
-    <!-- LEFT SIDE: QUESTIONS -->
+
+    <!-- =========================
+         LEFT SIDE: QUESTIONS
+    ========================== -->
+
     <aside class="interview-sidebar">
 
       <h2>🎧 Interview Questions</h2>
 
+
+      <!-- QUESTION 1 -->
+
       <button class="question-item active" data-question="1">
+
         <span class="question-number">01</span>
+
         <span class="question-text">
           What experiences in your teaching or scholarship led you to see
           collaborative writing as a valuable way of learning?
         </span>
+
       </button>
 
+
+      <!-- QUESTION 2 -->
+
       <button class="question-item" data-question="2">
+
         <span class="question-number">02</span>
+
         <span class="question-text">
           Why is structure so important when designing collaborative writing
           projects for students?
         </span>
+
       </button>
 
+
+      <!-- QUESTION 3 -->
+
       <button class="question-item" data-question="3">
+
         <span class="question-number">03</span>
+
         <span class="question-text">
           How did you identify the five central writing skills that shape the
           framework of the book?
         </span>
+
       </button>
 
+
+      <!-- QUESTION 4 -->
+
       <button class="question-item" data-question="4">
+
         <span class="question-number">04</span>
+
         <span class="question-text">
           How can assigning writing roles create interdependence without simply
           dividing the project into separate pieces?
         </span>
+
       </button>
 
+
+      <!-- QUESTION 5 -->
+
       <button class="question-item" data-question="5">
+
         <span class="question-number">05</span>
+
         <span class="question-text">
           How can instructors address students’ negative experiences or
           expectations about collaborative writing and group work?
         </span>
+
       </button>
 
+
+      <!-- QUESTION 6 -->
+
       <button class="question-item" data-question="6">
+
         <span class="question-number">06</span>
+
         <span class="question-text">
           Why is trust such an important part of successful collaborative
           writing, and how can teams develop it?
         </span>
+
       </button>
 
+
+      <!-- QUESTION 7 -->
+
       <button class="question-item" data-question="7">
+
         <span class="question-number">07</span>
+
         <span class="question-text">
           What role does empathy play in helping students become more effective
           writers and teammates?
         </span>
+
       </button>
 
+
+      <!-- QUESTION 8 -->
+
       <button class="question-item" data-question="8">
+
         <span class="question-number">08</span>
+
         <span class="question-text">
           What do you hope instructors across different disciplines take away
           from the approaches presented in this book?
         </span>
+
       </button>
 
+
+      <!-- QUESTION 9 -->
+
       <button class="question-item" data-question="9">
+
         <span class="question-number">09</span>
+
         <span class="question-text">
           Looking back at the book now, is there anything you would add,
           reconsider, or want to explore further?
         </span>
+
       </button>
 
     </aside>
 
 
-    <!-- RIGHT SIDE: ACTIVE QUESTION -->
+
+    <!-- =========================
+         RIGHT SIDE
+    ========================== -->
+
     <section class="interview-content">
 
+
+      <!-- ACTIVE QUESTION -->
+
       <div class="question-heading">
-        <span class="large-question-number" id="displayNumber">01</span>
+
+        <span
+          class="large-question-number"
+          id="displayNumber"
+        >
+          01
+        </span>
+
 
         <div>
+
           <h2 id="displayQuestion">
             What experiences in your teaching or scholarship led you to see
             collaborative writing as a valuable way of learning?
           </h2>
 
-          <p class="timestamp" id="displayTimestamp">
+
+          <p
+            class="timestamp"
+            id="displayTimestamp"
+          >
             00:00 – 04:28
           </p>
+
         </div>
+
       </div>
 
 
+
+      <!-- =========================
+           AUDIO PLAYER
+      ========================== -->
+
       <div class="audio-box">
 
-        <audio id="interviewAudio" controls>
-          <source src="audio/question-1.mp3" type="audio/mpeg">
+        <audio
+          id="interviewAudio"
+          controls
+          preload="metadata"
+        >
+
+          <source
+            src="audio/question-1.mp3"
+            type="audio/mpeg"
+          >
+
           Your browser does not support the audio element.
+
         </audio>
 
       </div>
 
 
+
+      <!-- =========================
+           TRANSCRIPT
+      ========================== -->
+
       <details class="transcript-box">
 
-        <summary>View Transcript</summary>
+        <summary>
+          View Transcript
+        </summary>
 
-        <div class="transcript-content" id="displayTranscript">
+
+        <div
+          class="transcript-content"
+          id="displayTranscript"
+        >
 
           <p>
             Add the transcript for Question 1 here.
@@ -137,20 +254,352 @@
       </details>
 
 
+
+      <!-- =========================
+           INTERVIEW NOTE
+      ========================== -->
+
       <div class="interview-note">
 
-        <span class="quote-mark">“</span>
+        <span
+          class="quote-mark"
+          aria-hidden="true"
+        >
+          “
+        </span>
+
 
         <p>
-          Each question links to a specific segment of the interview. Use the
-          list on the left to navigate between questions, listen to the authors’
-          responses, and explore key moments from the conversation.
+          Each question links to a specific segment of the interview.
+          Use the list on the left to navigate between questions,
+          listen to the authors’ responses, and explore key moments
+          from our conversation.
         </p>
 
       </div>
+
 
     </section>
 
   </section>
 
 </main>
+
+
+
+<!-- ==================================================
+     INTERVIEW QUESTION FUNCTIONALITY
+=================================================== -->
+
+<script>
+
+const interviewData = {
+
+
+  /* QUESTION 1 */
+
+  1: {
+
+    number: "01",
+
+    question:
+      "What experiences in your teaching or scholarship led you to see collaborative writing as a valuable way of learning?",
+
+    timestamp:
+      "00:00 – 04:28",
+
+    audio:
+      "audio/question-1.mp3",
+
+    transcript:
+      "<p>Add the transcript for Question 1 here.</p>"
+
+  },
+
+
+  /* QUESTION 2 */
+
+  2: {
+
+    number: "02",
+
+    question:
+      "Why is structure so important when designing collaborative writing projects for students?",
+
+    timestamp:
+      "04:28 – 08:15",
+
+    audio:
+      "audio/question-2.mp3",
+
+    transcript:
+      "<p>Add the transcript for Question 2 here.</p>"
+
+  },
+
+
+  /* QUESTION 3 */
+
+  3: {
+
+    number: "03",
+
+    question:
+      "How did you identify the five central writing skills that shape the framework of the book?",
+
+    timestamp:
+      "08:15 – 12:30",
+
+    audio:
+      "audio/question-3.mp3",
+
+    transcript:
+      "<p>Add the transcript for Question 3 here.</p>"
+
+  },
+
+
+  /* QUESTION 4 */
+
+  4: {
+
+    number: "04",
+
+    question:
+      "How can assigning writing roles create interdependence without simply dividing the project into separate pieces?",
+
+    timestamp:
+      "12:30 – 17:10",
+
+    audio:
+      "audio/question-4.mp3",
+
+    transcript:
+      "<p>Add the transcript for Question 4 here.</p>"
+
+  },
+
+
+  /* QUESTION 5 */
+
+  5: {
+
+    number: "05",
+
+    question:
+      "How can instructors address students’ negative experiences or expectations about collaborative writing and group work?",
+
+    timestamp:
+      "17:10 – 22:15",
+
+    audio:
+      "audio/question-5.mp3",
+
+    transcript:
+      "<p>Add the transcript for Question 5 here.</p>"
+
+  },
+
+
+  /* QUESTION 6 */
+
+  6: {
+
+    number: "06",
+
+    question:
+      "Why is trust such an important part of successful collaborative writing, and how can teams develop it?",
+
+    timestamp:
+      "22:15 – 27:00",
+
+    audio:
+      "audio/question-6.mp3",
+
+    transcript:
+      "<p>Add the transcript for Question 6 here.</p>"
+
+  },
+
+
+  /* QUESTION 7 */
+
+  7: {
+
+    number: "07",
+
+    question:
+      "What role does empathy play in helping students become more effective writers and teammates?",
+
+    timestamp:
+      "27:00 – 31:40",
+
+    audio:
+      "audio/question-7.mp3",
+
+    transcript:
+      "<p>Add the transcript for Question 7 here.</p>"
+
+  },
+
+
+  /* QUESTION 8 */
+
+  8: {
+
+    number: "08",
+
+    question:
+      "What do you hope instructors across different disciplines take away from the approaches presented in this book?",
+
+    timestamp:
+      "31:40 – 36:10",
+
+    audio:
+      "audio/question-8.mp3",
+
+    transcript:
+      "<p>Add the transcript for Question 8 here.</p>"
+
+  },
+
+
+  /* QUESTION 9 */
+
+  9: {
+
+    number: "09",
+
+    question:
+      "Looking back at the book now, is there anything you would add, reconsider, or want to explore further?",
+
+    timestamp:
+      "36:10 – 40:00",
+
+    audio:
+      "audio/question-9.mp3",
+
+    transcript:
+      "<p>Add the transcript for Question 9 here.</p>"
+
+  }
+
+};
+
+
+
+/* ==================================================
+   CONNECT QUESTIONS TO RIGHT-SIDE CONTENT
+=================================================== */
+
+
+const questionButtons =
+  document.querySelectorAll(".question-item");
+
+
+const displayNumber =
+  document.getElementById("displayNumber");
+
+
+const displayQuestion =
+  document.getElementById("displayQuestion");
+
+
+const displayTimestamp =
+  document.getElementById("displayTimestamp");
+
+
+const displayTranscript =
+  document.getElementById("displayTranscript");
+
+
+const interviewAudio =
+  document.getElementById("interviewAudio");
+
+
+
+/* ==================================================
+   WHEN A QUESTION IS CLICKED
+=================================================== */
+
+
+questionButtons.forEach(button => {
+
+  button.addEventListener("click", function () {
+
+
+    /* Find the selected question */
+
+    const questionNumber =
+      this.dataset.question;
+
+
+    const data =
+      interviewData[questionNumber];
+
+
+
+    /* Remove highlight from old question */
+
+    questionButtons.forEach(item => {
+
+      item.classList.remove("active");
+
+    });
+
+
+
+    /* Highlight selected question */
+
+    this.classList.add("active");
+
+
+
+    /* Change question number */
+
+    displayNumber.textContent =
+      data.number;
+
+
+
+    /* Change full question */
+
+    displayQuestion.textContent =
+      data.question;
+
+
+
+    /* Change timestamp */
+
+    displayTimestamp.textContent =
+      data.timestamp;
+
+
+
+    /* Change transcript */
+
+    displayTranscript.innerHTML =
+      data.transcript;
+
+
+
+    /* Stop current audio */
+
+    interviewAudio.pause();
+
+
+
+    /* Load selected audio */
+
+    interviewAudio.src =
+      data.audio;
+
+
+    interviewAudio.load();
+
+
+  });
+
+});
+
+</script>
