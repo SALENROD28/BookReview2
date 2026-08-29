@@ -942,7 +942,6 @@ img {
   line-height: 1.4;
 }
 
-
 /* Selected question */
 
 .question-item.active {
@@ -950,9 +949,89 @@ img {
   border-left: 5px solid #2bb8c3;
 }
 
-
 /* Hover effect */
 
 .question-item:hover {
   background-color: #e4f7f8;
+}
+/* ---------------------------------
+   INTERVIEW RIGHT CONTENT PANEL
+---------------------------------- */
+
+.interview-content {
+  width: 100%;
+  padding: 34px 38px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #dddddd;
+  border-radius: 7px;
+
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+/* Active question heading */
+
+.question-heading {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 22px;
+
+  align-items: start;
+
+  margin-bottom: 28px;
+}
+
+.large-question-number {
+  display: block;
+
+  padding-right: 18px;
+
+  color: #168a96;
+
+  border-right: 2px solid #66cbd1;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.question-heading h2 {
+  margin: 0;
+
+  color: #111111;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+.timestamp {
+  margin: 14px 0 0;
+
+  color: #168a96;
+
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* ---------------------------------
+   AUDIO PLAYER AREA
+---------------------------------- */
+
+.audio-box {
+  width: 100%;
+
+  margin: 25px 0 30px;
+  padding: 18px;
+
+  background-color: #eefafb;
+
+  border-radius: 10px;
+}
+
+.audio-box audio {
+  display: block;
+  width: 100%;
 }
