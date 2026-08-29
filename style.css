@@ -742,7 +742,6 @@ img {
   color: #168a96;
 }
 
-
 /* Active navigation */
 
 .main-navigation a.active {
@@ -821,3 +820,23 @@ img {
   }
 
 }
+
+/* all of your existing CSS above */
+
+/* existing mobile styles */
+@media (max-width: 768px) {
+  /* existing code */
+}
+
+
+/* =====================================================
+   INTERVIEW PAGE
+===================================================== */
+
+.interview-page {
+  width: 100%;
+  padding: 55px 5%;
+  background: #ffffff;
+}
+
+/* rest of the Interview CSS continues here */
